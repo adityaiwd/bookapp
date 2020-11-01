@@ -22,3 +22,5 @@ $router->get('/key', function() {
 });
 
 $router->get('/books', 'BooksController@index');
+
+$router->get('/books/{id}','BooksController@withId');

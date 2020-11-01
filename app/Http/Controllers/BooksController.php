@@ -11,5 +11,9 @@ class BooksController extends BaseController
     public function index(){
         return Book::all();
     }
+
+    public function withId($id){
+        return Book::find($id);
+    }
 }
 
