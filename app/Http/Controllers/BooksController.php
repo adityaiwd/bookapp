@@ -13,7 +13,11 @@ class BooksController extends BaseController
     }
 
     public function withId($id){
-        return Book::find($id);
+        if (Book::where('id', '=', $id)->exists()) {
+            return Book::find($id);
+        }else{
+            return response()->json('Book Not Found', 404); 
+        }
     }
 }
 
