@@ -1,6 +1,6 @@
 # Bookapp (Tugas Pemrograman Integratif)
 
-NIM     : 185150700111010
+NIM     : 185150700111010  
 Nama    : Aditya Dwi Wicaksono
 
 ## Penjelasan Praktikum
@@ -17,3 +17,6 @@ Mengisi tabel "books" pada database "bookapp_lumen" dengan data-data yang disedi
 
 ### Pembuatan Model dan Pemanggilan data melalui model
 Dengan membuat model data-data yang ada pada tabel dapat di definisikan pada program. Kemudian data-data model yang sudah dibuat dapat dipanggil menggunakan controller, agar data-data tersebut dapat ditampilkan pada program.
+
+### Fungsi CRUD (Create, Read, Update, Delete)
+Dengan adanya fungsi ini, dapat melakukan pembuatan, pembacaan, pembaruan, dan penghapusan data yang ada di tabel pada database melalui API lumen yang sudah dibuat.
