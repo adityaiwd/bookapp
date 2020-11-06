@@ -24,3 +24,9 @@ $router->get('/key', function() {
 $router->get('/books', 'BooksController@index');
 
 $router->get('/books/{id}','BooksController@withId');
+
+$router->post('/books', 'BooksController@store');
+
+$router->put('books/{id}', 'BooksController@update');
+
+$router->delete('books/{id}', 'BooksController@destroy');
