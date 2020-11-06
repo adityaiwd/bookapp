@@ -27,6 +27,16 @@ $router->get('/books/{id}','BooksController@withId');
 
 $router->post('/books', 'BooksController@store');
 
-$router->put('books/{id}', 'BooksController@update');
+$router->put('/books/{id}', 'BooksController@update');
 
-$router->delete('books/{id}', 'BooksController@destroy');
+$router->delete('/books/{id}', 'BooksController@destroy');
+
+$router->get('/authors', 'AuthorController@index');
+
+$router->get('/authors/{id}','AuthorController@withId');
+
+$router->post('/authors', 'AuthorController@store');
+
+$router->put('/authors/{id}', 'AuthorController@update');
+
+$router->delete('/authors/{id}', 'AuthorController@destroy');

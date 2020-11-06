@@ -15,21 +15,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('books')->insert([
-            'title' => 'War of the Worlds',
-            'description' => 'A science fiction masterpiece about Martians invading London',
-            'author' => 'H. G. Wells',
+            DB::table('author')->insert([
+            'name' => 'JK Rowling',
+            'gender' => 'female',
+            'biography' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu mauris ac dui mattis laoreet. Nulla nunc felis, lacinia mattis vulputate sed, dignissim nec mi. Duis finibus commodo lectus sit amet pellentesque.',
             
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
             ]);
             
-            DB::table('books')->insert([
-            'title' => 'A Wrinkle in Time',
-            'description' => 'A young girl goes on a mission to save her father who has gone missing after working on a mysterious project called a tesseract.',
-            'author' => 'Madeleine L\'Engle',
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
-            ]);
+            DB::table('author')->insert([
+                'name' => 'Andrea Hirata',
+                'gender' => 'male',
+                'biography' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu mauris ac dui mattis laoreet. Nulla nunc felis, lacinia mattis vulputate sed, dignissim nec mi. Duis finibus commodo lectus sit amet pellentesque.',
+                
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+                ]);
+            
     }
 }
